@@ -5,7 +5,9 @@
   "main": "index.js",
   "types": "index.d.ts",
   "scripts": {
-    "test": "gulp"
+    "test": "gulp",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
   },
   "keywords": [
     "api",
@@ -75,6 +77,8 @@
     "path-to-regexp": "^1.7.0",
     "swagger-methods": "^1.0.0",
     "swagger-schema-official": "2.0.0-bab6bed",
-    "z-schema": "^3.19.1"
-  }
+    "z-schema": "^3.19.1",
+    "snyk": "^1.189.0"
+  },
+  "snyk": true
 }
